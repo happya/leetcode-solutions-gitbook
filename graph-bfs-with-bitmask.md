@@ -4,7 +4,7 @@ description: >-
   bitmap
 ---
 
-# Graph BFS with bitMask
+# Graph with bitMask
 
 In ordinary BFS, we always use a `vector` to mark if a node is visited or not. However, in some problems, the re-visited is allowed, or must revisit some nodes to get the solution. In this case, we can use a bitmap, combined with the node information, to create the new ID for the node. So these new IDs not only contains the node number but also contains information like the path that gets to this node.
 
@@ -166,7 +166,7 @@ public:
 
 #### 403: Frog Jump
 
-Similar method. Using bitmap to mark the visiting state of each stone.
+DFS + bitmap. Using bitmap to mark the visiting state of each stone.
 
 ```text
 class Solution {
@@ -194,6 +194,56 @@ public:
     bool canCross(vector<int>& stones) {
         
         return helper(stones, 0, 0);
+    }
+};
+```
+
+No recursion version:
+
+```text
+class Solution {
+public:
+    bool canCross(vector<int>& stones) {
+        int n = stones.size();
+        stack<pair<int,int>> q;
+        q.emplace(0, 0);
+        unordered_set<long> visited;
+        int k;
+        while(!q.empty()){
+            
+            int pos = q.top().first;
+            k = q.top().second;
+            q.pop();
+            if(pos == n - 1)
+                return true;
+            long nodeId = pos;
+            nodeId = ((nodeId << 32) | k);
+            if(visited.find(nodeId) != visited.end()){
+                return false;
+            }
+            
+            for(int i = pos + 1; i < n; i++){
+                int gapsize = stones[i] - stones[pos];
+                if(gapsize < k - 1) continue;
+                if(gapsize > k + 1){
+                    if(i == n - 1)
+                        visited.insert(nodeId);
+                    break; 
+                }
+                if( i == n - 1)
+                    return true;
+                long nextId = i;
+                nextId = (nextId << 16) | gapsize;
+                if(visited.find(nextId) != visited.end()){
+                    visited.insert(nextId);
+                    continue;
+                }
+                // cout<<"push: "<<stones[i]<<" at "<< stones[pos]<<endl;
+                
+                q.emplace(i, gapsize);
+            }
+        }
+        return false;
     }
 };
 ```
