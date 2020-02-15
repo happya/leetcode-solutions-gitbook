@@ -10,4 +10,5 @@
 
 * [String transfer](hard-oa-problems/string-transfer.md)
 * [Find the number of paths with specified length](hard-oa-problems/find-the-number-of-paths-with-specified-length.md)
+* [Morris Traversal](morris-traversal.md)
 
