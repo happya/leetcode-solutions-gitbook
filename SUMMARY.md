@@ -5,6 +5,9 @@
 * [240. Search a 2D Matrix II](240.-search-a-2d-matrix-ii.md)
 * [828. Unique letter string](828.-unique-letter-string.md)
 * [Graph with bitMask](graph-bfs-with-bitmask.md)
-* [Find the number of paths with specified length](find-the-number-of-paths-with-specified-length.md)
-* [String transfer](string-transfer.md)
+
+## Hard OA problems
+
+* [String transfer](hard-oa-problems/string-transfer.md)
+* [Find the number of paths with specified length](hard-oa-problems/find-the-number-of-paths-with-specified-length.md)
 

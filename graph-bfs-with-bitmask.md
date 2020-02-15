@@ -12,7 +12,7 @@ In ordinary BFS, we always use a `vector` to mark if a node is visited or not. H
 
 1. The most intuitive way is to construct a new class as below.
 
-```text
+```cpp
 class Node {
     int v;
     int bitMask;
@@ -33,7 +33,7 @@ newNode = (node << 16) | (1 << node);
 
 Solution: BFS + bitMask. Some nodes have to be re-visited because sometimes it is impossible to traverse all the nodes without heading back.
 
-```text
+```cpp
 class Solution {
    
 public:
@@ -87,7 +87,7 @@ public:
 
 Some nodes need to be revisited because sometimes we should first get keys and then get back to open the corresponding lockers.
 
-```text
+```cpp
 class Solution {
 private:
     bool isValid(vector<string>& grid, int x, int y){
