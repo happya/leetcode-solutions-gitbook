@@ -1,8 +1,8 @@
 ---
-description: graph and dynamic programming
+description: dfs and dynamic programming
 ---
 
-# Find the number of paths with specified length
+# Find the number of paths with a specified length
 
 This problem is not from the leetcode, but I think it is pretty difficult. It combines the graph theory and dynamic programming. The follow up is about how to obtain all the paths. Currently, my solution can only deal with graph \(normally non-directed graph without loops\).
 

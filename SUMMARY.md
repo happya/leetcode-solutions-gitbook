@@ -6,10 +6,11 @@
 * [828. Unique letter string](828.-unique-letter-string.md)
 * [Graph with bitMask](graph-bfs-with-bitmask.md)
 
-## Hard OA problems
+## Graph theory problems
 
-* [String transfer](hard-oa-problems/string-transfer.md)
-* [Find the number of paths with specified length](hard-oa-problems/find-the-number-of-paths-with-specified-length.md)
+* [Hamiltonian path](graph-theory-problems/hamiltonian-path.md)
+* [String transfer](graph-theory-problems/string-transfer.md)
+* [Find the number of paths with a specified length](graph-theory-problems/find-the-number-of-paths-with-specified-length.md)
 * [Morris Traversal](morris-traversal.md)
 * [300. Longest increasing subsquence](300.-longest-increasing-subsquence.md)
 
