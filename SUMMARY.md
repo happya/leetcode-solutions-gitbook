@@ -18,4 +18,7 @@
 
 * [String match](dynamic-programming/string-match.md)
 * [98. Validate Binary search tree](98.-validate-binary-search-tree.md)
+* [application of merge-sort](application-of-merge-sort.md)
+* [binary index tree](binary-index-tree.md)
+* [Trie](trie.md)
 
