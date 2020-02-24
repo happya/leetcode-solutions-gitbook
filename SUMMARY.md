@@ -22,4 +22,5 @@
 * [binary index tree](binary-index-tree.md)
 * [Trie](trie.md)
 * [Number of paths with length-K](number-of-paths-with-length-k.md)
+* [Quick partition](quick-partition.md)
 
