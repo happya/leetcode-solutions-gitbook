@@ -21,4 +21,5 @@
 * [application of merge-sort](application-of-merge-sort.md)
 * [binary index tree](binary-index-tree.md)
 * [Trie](trie.md)
+* [Number of paths with length-K](number-of-paths-with-length-k.md)
 
