@@ -23,4 +23,5 @@
 * [Trie](trie.md)
 * [Number of paths with length-K](number-of-paths-with-length-k.md)
 * [Quick partition](quick-partition.md)
+* [stack and container](stack-and-container.md)
 
