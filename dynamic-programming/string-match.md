@@ -20,17 +20,9 @@ There are two tricky parts:
 >
 > state transfer of dp
 
-
-
-
-
-
-
 ### 1. All strings match \(no wildcard\)
 
 #### 115. Distinct sub-sequences
-
-
 
 ```cpp
 class Solution {
@@ -80,8 +72,6 @@ public:
 ```
 
 ### 44. Wildcard matching
-
-
 
 This time, the pattern be the outer loop is more sensible.
 
